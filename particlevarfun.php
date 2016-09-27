@@ -1,6 +1,7 @@
-// Based on Simple Spark PHP Proxy by wgbartley
 
 <?php
+// Based on Simple Spark PHP Proxy by wgbartley
+
 $device = $_REQUEST["device"];
 $method = $_REQUEST["method"];
 if(!$device||!$method) die("device or method param missing\n");
