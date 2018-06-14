@@ -10,7 +10,7 @@ if(!$device||!$method) die("device or method param missing\n");
 $_REQUEST["access_token"] = "your_access_token_here" ;
 
 $args =$_REQUEST["args"];
-if(!$args) {
+if(!$args && !($args == '0')) {
 // create params
 $params = http_build_query($_REQUEST);
 // make request
